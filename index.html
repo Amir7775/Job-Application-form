@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1>Job Application Form</h1>
+        <form action="index.html" enctype="multipart/form-data">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name">First Name:</label>
+              <input
+                id="first_name"
+                type="text"
+                placeholder="Enter your first name"
+              />
+            </div>
+
+            <div class="form_control">
+              <label for="last_name">Last Name:</label>
+              <input
+                id="last_name"
+                type="text"
+                placeholder="Enter your last name"
+              />
+            </div>
+
+            <div class="form_control">
+              <label for="email">email:</label>
+              <input id="email" type="email" placeholder="Enter your email" />
+            </div>
+
+            <div class="form_control">
+              <label for="job_role">Job role:</label>
+              <select name="job_role" id="job_role">
+                <option value="">Select your role</option>
+                <option value="frontend">front end developer</option>
+                <option value="backend">backend developer</option>
+                <option value="fullstack">full stack developer</option>
+              </select>
+            </div>
+            <div class="form_control">
+              <label for="city">City:</label>
+              <input id="city" type="text" placeholder="Enter your city" />
+            </div>
+            <div class="form_control">
+              <label for="phone">Phone Number:</label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form_control">
+              <label for="address">Address: </label>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="date">Date: </label>
+              <input type="date" value="2000-01-20" />
+            </div>
+            <div class="form_control">
+              <label for="upload">Upload your Cv: </label>
+              <input type="file" id="upload" />
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
